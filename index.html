@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Effects Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="CSS/Estilos.css">
+      
+      
+  </head>
+    <!--Empieza Cuerpo-->
+  <body>
+      
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+      <!--Empieza Boostrap para Menu-->
+      
+      
+       <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-blue fixed-top bg-light">
+                    <a class="navbar-brand" href="#">Effects</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+                        <li class="nav-item">
+          <a class="nav-link" href="#Playeras">Playeras</a>
+        </li>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="Imagenes/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                 <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+      
+         <!--Termina  Boostrap para Menu--> 
+          
+           <!--Cuerpo de Imagen en CSS y Texto -->
+      <div class="cover d-flex p-2 justify-content-center align-items-center flex-column">
+          <h1>Effects</h1>
+          <p>Playeras Premium con la mejor Calidad</p>
+          
+          </div>
+          <!--Cuerpo de Imagen en CSS y Texto -->
+      
+    </header>
+       <!--Fin boostrap para Menu-->
+      <section class="Playeras" id="Playeras"> 
+      <div class="container mt-5 d-flex justify-content-center align-items-center flex-column"> 
+          <h1>NOVEDADES</h1>
+          </div>
+      
+      </section>
+
+      <!--Seccion de Compras-->
+      <section>
+          
+      <div class="container" id="lista-productos">  
+          
+          <div class="container mt-5 mb-5"> <!--Para margen de Tarjeta-->
+              <div class="row"> 
+                  <div class="col"> 
+      <div class="card" style="width: 18rem;">
+  <img src="Imagenes/Codex%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera Codex</h5>
+    <p class="card-text">780</p>
+    <button onclick="window.location.href = 'Paginas/PlayeraCodex.html'" class="btn btn-primary">Ver Mas</button>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+  </div>
+</div>
+                      </div>
+                  
+                  
+    <div class="col">           
+              <div class="card" style="width: 18rem;">
+  <img src="Imagenes/Gorman%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera Gorman</h5>
+    <p class="card-text">810</p>
+    <button onclick="window.location.href = 'Paginas/PlayeraGorman.html'" class="btn btn-primary">Ver Mas</button>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+  </div>
+</div>
+        </div>
+              
+                  <div class="col">  
+              <div class="card" style="width: 18rem;">
+  <img src="Imagenes/Ambar%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera Ambar</h5>
+    <p class="card-text">1200</p>
+    <button onclick="window.location.href = 'Paginas/PlayeraAmbar.html'" class="btn btn-primary">Ver Mas</button>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+  </div>
+</div>
+              </div>
+                  </div>
+              
+          </div>
+           
+      </section>
+      
+      <section>
+          <div class="container mt-5 mb-5"> <!--Para margen de Tarjeta-->
+              <div class="row"> 
+                  <div class="col"> 
+      <div class="card" style="width: 18rem;">
+  <img src="Imagenes/Realeza%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera Realeza</h5>
+    <p class="card-text">870</p>
+    <button onclick="window.location.href = 'Paginas/PlayeraRealeza.html'" class="btn btn-primary">Ver Mas</button>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+  </div>
+</div>
+                      </div>
+                  
+                  
+    <div class="col">           
+              <div class="card" style="width: 18rem;">
+  <img src="Imagenes/Chac-Lam%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera Chac-Lam</h5>
+    <p class="card-text">1050</p>
+    <a href="Paginas/PlayeraChac-Lam.html" class="btn btn-primary">Ver mas</a>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+  </div>
+</div>
+        </div>
+              
+                  <div class="col">  
+              <div class="card" style="width: 18rem;">
+  <img src="Imagenes/El%20Dorado%20Portada.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playera El Dorado</h5>
+    <p class="card-text">1500</p>
+    <button onclick="window.location.href = 'Paginas/PlayeraElDorado.html'" class="btn btn-primary">Ver Mas</button>
+      <a href="#" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+  </div>
+</div>
+              </div>
+                  </div>
+             </div>
+         
+          </div>
+      </section>
+      <!--Fin de Seccion de Tarjetas-->
+      
+      <!--Pie de Pagina de Contacto-->
+      
+      <footer class="bg-dark text-white pt-5 pb-4">
+      
+      <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+               <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Sobre Nosotros</h5>
+                  <p>Compañia dedicada a la fabricacion de playeras premium</p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Productos</h5>
+                  <p>Playera El Dorado</p>
+                  <p>Playera Chac-Lam</p>
+                  <p>Playera Realeza</p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                  <p>Email:omarval312@gmail.com</p>
+                  <p>Telefono:5510592118</p>
+                  <p>Sucursal: Coyoacan CDMX</p>
+              </div>
+              
+          </div>
+          </div>
+          </div>
+          
+      
+      </footer>
+      <!--Fin Pie de Pagina de Contacto-->
+
+    <script src="JavaScript/jquery-3.4.1.min.js"></script>
+    <script src="JavaScript/bootstrap.min.js"></script>
+     <script src="JavaScript/carrito.js"></script>
+      <script src="JavaScript/pedido.js"></script>
+
+
+  </body>
+</html>

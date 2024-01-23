@@ -1,0 +1,15 @@
+.cover{
+    color: white;
+    height: 500px;
+    background-image: url(Imagenes/Portada.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+[class *= ´col´]{
+    padding:  1rem;
+    background-color: aqua;
+    
+    
+}
+
